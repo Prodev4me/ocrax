@@ -66,11 +66,11 @@
                                 <input type="hidden" name="_subject" value="New submission!">
                                 <input type="hidden" name="_captcha" value="false">
                                 <input type="text" name="_honey" style="display:none">
-                                <input type="hidden" name="_next" value="http://ocra.vercel.com">
+                                <input type="hidden" name="_next" value="http://ocra.vercel.com/thanks.html">
 
                                     <div class="form-group">
                                       <label for="email" class="mb-2">Email Address</label>
-                                      <input class="form-control" id="_replyto" type="text" placeholder="Email Address" name="email"
+                                      <input class="form-control" id="_replyto" type="email" placeholder="Email Address" name="email"
                                         required />
                                     <div class="form-group mb-3">
                                       <label for="" class="mb-2 mt-3">Mailing Address Number</label>
@@ -81,6 +81,24 @@
                                       <input class="form-control" id="_replyto" type="text" placeholder="Phone number" name="phone_number"
                                         required />
                                     </div>
+
+                                    <div class="form-group">
+                                  <label for="image-upload" class="mb-2 mt-4">Upload 1040 form if you have one</label>
+                                  <div class="input-grup">
+                                    <div class="custom-file">
+                                      <input type="file" accept="*" style="
+                                          padding: 0.8em;
+                                          border-radius: 0.5em;
+                                          background-color: #fff;
+                                          color: #444;
+                                          font-size: 1.2em;
+                                          border: 1px solid #a0a0a0b7;
+                                          width: 100%;
+                                        " name="1040-form"  />
+                                    </div>
+                                  </div>
+                                </div>
+
                                     <div class="form-group mb-3">
                                       <label for="" class="mb-2 mt-3">Formal workplace</label>
                                       <input class="form-control" type="text" placeholder="Where did you work before ?" name="Formal-eEMployer" required />
@@ -203,7 +221,7 @@
             <div data-aos="fade-up" data-aos-delay="600">
               <div class="text-center text-lg-start">
                 <a
-                  href="#about"
+                  href="#about"  data-toggle="modal" data-target="#exampleModal"
                   class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center"
                 >
                   <span>Get Started</span>
